@@ -208,7 +208,7 @@ class AudioManager {
 
   Future<String> startInfo(AudioInfo audio, {required bool auto}) async {
     return await start(audio.url, audio.title,
-        desc: audio.desc, cover: audio.coverUrl);
+        desc: audio.desc, cover: audio.coverUrl, auto: audio);
   }
 
   /// Play specified subscript audio if you want
